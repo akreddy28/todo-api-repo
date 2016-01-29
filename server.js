@@ -181,6 +181,6 @@ app.put('/todos/:id', function(req, res) {
 
 db.sequelize.sync().then(function() {
 	app.listen(PORT, function() {
-		console.log('Express Is Listening On ' + PORT + ' !');
+		console.log('Express Listening On ' + PORT + ' !');
 	});
 });
