@@ -126,8 +126,8 @@ app.delete('/todos/:id', function(req, res) {
 		where: {
 			id: todoId
 		}
-	}).then(function(rowsDelted) {
-		if(rowsDelted === 0) {
+	}).then(function(rowsDeleted) {
+		if(rowsDeleted === 0) {
 			res.status(404).json({
 				error: 'No todo with give id'
 			});
