@@ -129,7 +129,7 @@ app.delete('/todos/:id', function(req, res) {
 	}).then(function(rowsDelted) {
 		if(rowsDelted === 0) {
 			res.status(404).json({
-				error: 'No todo with id'
+				error: 'No todo with give id'
 			});
 		} else {
 			res.status(204).send();
