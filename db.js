@@ -20,7 +20,7 @@ var sequelize = new Sequelize(undefined, undefined, undefined, {
 
 var db = {};
 
-db.todo = sequelize.import(__dirname + '/models/todo.js');
+db.todo = sequelize.import(__dirname + '/models/todo.js'); 
 db.user = sequelize.import(__dirname + '/models/userr.js');
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
