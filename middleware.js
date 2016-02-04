@@ -11,5 +11,5 @@ module.exports = function(db) {
 				res.status(401).send();
 			});
 		}
-	}
-}
+	};
+};
